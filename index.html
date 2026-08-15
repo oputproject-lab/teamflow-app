@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamFlow Dashboard</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <h1 class="logo">TeamFlow</h1>
+
+        <div class="user">
+            <span>Developer</span>
+        </div>
+    </header>
+
+    <div class="app-layout">
+
+        <aside class="sidebar">
+            <nav>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#" class="active">Dashboard</a>
+                    </li>
+
+                    <li>
+                        <a href="#">My Tasks</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Team</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Settings</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="dashboard">
+
+            <section class="dashboard-header">
+                <h2>Good evening, Developer</h2>
+                <p>Here's what's happening with your team today.</p>
+            </section>
+
+            <section class="summary-cards">
+
+                <div class="summary-card">
+                    <p>Total Tasks</p>
+                    <h3 id="totalTasks">12</h3>
+                </div>
+
+                <div class="summary-card">
+                    <p>In Progress</p>
+                    <h3 id="inProgressTasks">5</h3>
+                </div>
+
+                <div class="summary-card">
+                    <p>Completed</p>
+                    <h3 id="completedTasks">7</h3>
+                </div>
+
+            </section>
+
+            <section class="recent-tasks">
+
+                <div class="section-header">
+                    <h2>Recent Tasks</h2>
+                </div>
+
+                <div class="task-list">
+
+                    <article class="task-card">
+                        <div>
+                            <h3>Design TeamFlow dashboard</h3>
+                            <p>Build the initial dashboard interface.</p>
+                        </div>
+
+                        <div class="task-meta">
+                            <span class="priority high">High</span>
+                            <span class="status progress">In Progress</span>
+                        </div>
+                    </article>
+
+                    <article class="task-card">
+                        <div>
+                            <h3>Set up authentication</h3>
+                            <p>Prepare login and account functionality.</p>
+                        </div>
+
+                        <div class="task-meta">
+                            <span class="priority medium">Medium</span>
+                            <span class="status pending">Pending</span>
+                        </div>
+                    </article>
+
+                    <article class="task-card">
+                        <div>
+                            <h3>Create project repository</h3>
+                            <p>Set up the initial application structure.</p>
+                        </div>
+
+                        <div class="task-meta">
+                            <span class="priority low">Low</span>
+                            <span class="status completed">Completed</span>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
